@@ -1,0 +1,623 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color:#9BB0C1;
+    margin: 0;
+}
+/*INICIO ENCABEZADO*/
+header{
+    position: flex;
+    top: 0; left: 0; right: 0;
+    background: #51829B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    z-index: 1000;
+    width: 100%;
+    height: 40px;
+}
+
+header .logo {
+    color: #EADFB4;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header .logo:hover{
+    color: #F6995C;
+}
+
+header .navbar a{
+    font-size: 18px;
+    padding: 0 2rem;
+    color: #EADFB4;
+    text-decoration: none;
+}
+
+header .navbar a:hover{
+    color: #F6995C;
+}
+
+header .iconos a{
+    font-size: 24px;
+    color: #333;
+    margin-left: 20px;
+}
+
+header .iconos a:hover{
+    color: #F6995C;
+}
+/*FIN ENCABEZADO*/
+
+/*INICIO BARRA NAVEGACION*/
+
+.b-navegacion{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.b-navegacion ul{
+    list-style: none;
+    background-color: #335c70;
+    text-align: center;
+    height: 54px;
+    padding: 0; 
+    margin: 0;
+}
+
+.b-navegacion ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.b-navegacion ul li a{
+    display: block;
+    padding: 12px 18px;
+    font-size: 20px;
+    color: #EADFB4;
+    text-decoration: none;
+    text-align: left;
+}
+
+.b-navegacion ul li ul.dropdown li{
+    display: block;
+    background: #335c70;
+    margin: 0px;
+    padding: 0;
+}
+
+.b-navegacion ul li ul.dropdown{
+    width: auto;
+    background: #F6995C;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.b-navegacion ul li a:hover{
+    background: #F6995C;
+    color: #EADFB4;
+}
+
+.b-navegacion ul li:hover ul.dropdown{
+    display: block;
+}
+
+.b-navegacion ul li ul.dropdown li a:hover{
+    background-color: #F6995C;
+    color: #EADFB4;
+}
+
+/*BARRA BUSQUEDA*/
+.caja{
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.caja:hover input{
+    width: 400px;
+}
+
+.caja input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: #EADFB4;
+    border-radius: 5px;
+}
+
+.caja a .fas{
+    color: #F6995C;
+    background-color: #51829B;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 15px;
+}
+/*FIN BARRA BUSQUEDA*/
+/*FIN BARRA NAVEGACION*/
+
+/*INICIO CARRUSEL*/
+#carouselExampleIndicators{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-item img{
+    max-width: 100%;
+    height: auto;
+}
+/*FIN INICIO lol*/
+
+/*PRODUCTOS POPULARES*/
+/*TITULO*/
+.titulo {
+    background-color: #51829B; 
+    padding: 20px; 
+    border-radius:50px;
+    width: 100%; 
+    margin: 30px auto; 
+    text-align: center; 
+}
+.titulo h1 {
+    margin: 0; 
+}
+/*TITULO*/
+
+/* INICIO CARDS*/
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.producto {
+    text-align: center;
+    width: calc(33.33% - 10px);
+    padding: 20px;
+    position: relative; 
+    background-color: #fff;
+      width: 300px;
+    height: auto; 
+     border-radius: 10px;
+    overflow: hidden; 
+    margin: 10px; 
+    display: inline-block;
+}
+
+.producto img {
+    max-width: 100%;
+    position: relative; 
+}
+.contenedor-imagen {
+    position: relative;
+    display: inline-block;
+}
+
+.descuento {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    background-color: rgb(240, 102, 182);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px; 
+}
+
+.precio {
+    margin-top: 10px;
+}
+
+.precio-original {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.precio-descuento {
+    color: #007bff; 
+}
+.precio-anterior del {
+    text-decoration: line-through;
+    color: #999; 
+}
+
+.producto button {
+    background-color: #F6995C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+}
+
+.producto button:hover {
+    background-color: #0056b3;
+}
+/*FIN PRODUCTOS POPULARES CARDS*/
+
+/*INICIO PIE DE PAGINA*/
+.pie .pie-pagina {
+    color: #EADFB4;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.pie-pagina .fondo {
+    background-color: #51829B;
+    padding: 30px 0;
+}
+
+.pie-pagina .contenido {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pie-pagina .logo img {
+    width: 200px;
+}
+
+.pie-pagina ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pie-pagina ul li {
+    margin-bottom: 10px;
+}
+
+.pie-pagina ul li a {
+    color: #EADFB4;
+    text-decoration: none;
+}
+
+.pie-pagina ul li a:hover {
+    color: #F6995C;
+}
+
+.pie-pagina .contacto p {
+    margin: 7px 0;
+}
+
+.pie-pagina .contacto p a {
+    color: #EADFB4;
+}
+
+.pie-pagina .clinica-veterinaria p {
+    margin-bottom: 10px;
+}
+
+/*FIN PIE DE PAGINA*/
+
+
+/*INICIO PROMOCIONES HTML*/
+.title{
+    text-align: center;
+    font-size: 50px;
+    color: #EADFB4;
+    padding: 1rem 0;
+    background: #51829B;
+    border-radius: 80px;
+}
+
+.botones button{
+    display: flex;
+    height: 70px;
+    width: 300px;
+    align-items: center;
+    justify-content: left;
+    background-color: #EADFB4;
+    border-radius: 50px;
+    padding: 0 20px;
+    margin-left: 10px; 
+}
+
+.botones img{
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.botones p{
+    font-size: 18px;
+    text-align: left;
+    color: #51829B;
+}
+
+.botones button:hover{
+    opacity: 0.7;
+}
+
+.descts .fila-row .botones{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.descts .prod-desct{
+    text-align: center;
+    width: 100%;
+}
+
+/*FIN PROMOCIONES HTML*
+
+/*VISTA INICIAR SESION*/
+.form-login {
+    width: 400px;
+    height: 340px;
+    background: #24303c;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    color: white;
+}
+
+.form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+
+.form-login .recuadro {
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #252323;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-login .boton {
+    width: 100%;
+    height: 40px;
+    background: #F6995C;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.form-login .boton:hover {
+    opacity: 0.7;
+}
+
+.form-login p {
+    height: 40px;
+    text-align: center;
+    border-bottom: 2px solid;
+}
+
+.form-login a {
+    color: white;
+    font-size: 14px;
+}
+
+.form-login a:hover {
+    text-decoration: underline;
+}
+/*CIERRE INICIO SESION*/
+
+/*VISTA CREAR CUENTA*/
+.form-registro {
+    width: 400px;
+    background: #24303c;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-registro h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.form-registro .recuadro {
+    width: 95%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    color: white;
+}
+
+.form-registro p {
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.form-registro a {
+    color: white;
+}
+
+.form-registro a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-registro .boton {
+    width: 100%;
+    background: #F6995C;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.form-registro .boton:hover{
+    opacity: 0.7;
+}
+/*CIERRE CREAR CUENTA*/
+
+/*CONTACTO HTML*/
+.forma {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.mapa {
+    margin-bottom: 20px;
+}
+
+
+.formulario {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formulario h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-grupo {
+    margin-bottom: 20px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-grupo input[type="text"],
+.form-grupo input[type="email"],
+.form-grupo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-grupo textarea {
+    height: 150px;
+}
+
+.form-grupo input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-enviar {
+    padding: 10px 20px;
+    background-color: #F6995C;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    width: 100px; 
+    margin: 0 auto;
+    margin-left: 500px;
+}
+
+.boton-enviar:hover {
+    background-color: #d36b26;
+}
+
+/*Fin contacto*/
+
+/*CARRITO*/
+.contenido-centrado {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9BB0C1; 
+}
+
+.contenido-centrado p {
+    color: #333; 
+    font-size: 20px;
+    margin-bottom: 20px; 
+}
+
+.contenido-centrado h2 {
+    color: #333;
+    font-weight: bold; 
+    font-size: 24px; 
+}
+
+.subrayado {
+    width: 100px; 
+    height: 5px; 
+    background-color: #51829B;
+    margin-top: -5px; 
+    margin-bottom: 20px;
+}
+/*Fin carrito*/
+
+/*Modal*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width:300px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+/*Fin del modal*/

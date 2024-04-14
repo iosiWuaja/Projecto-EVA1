@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Patitas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>    
+      <a href="index.html" class="logo">Patitas</a>
+
+      <!--BARRA NAVEGACION-->
+      <nav class="navbar">
+          <a href="index.html">Inicio</a>
+          <a href="contactanos.html">Contacto</a>
+          <a href="#">Nosotros</a>
+      </nav>
+
+      <div class="iconos">
+          <a href="usuario.html" class="fas fa-user"></a>
+          <a href="carrito.html" class="fas fa-shopping-cart"></a>
+      </div>
+  </header>
+
+  <section class="form-registro">
+    <h4>Registrarse</h4>
+    <input class="recuadro" type="text" name="nombres" id="nombres" placeholder="Nombres">
+    <input class="recuadro" type="text" name="apellidos" id="apellidos" placeholder=" Apellido">
+    <input class="recuadro" type="email" name="correo" id="correo" placeholder="Correo">
+    <input class="recuadro" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña">
+    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+    <input class="boton" type="submit" value="Registrar" id="registrar-btn">
+    <p><a href="usuario.html">¿Ya tengo Cuenta?</a></p>
+  </section>
+
+  <div id="Modal" class="modal">
+    <div class="modal-contenido">
+      <span class="close">&times;</span>
+      <p>Verifica tu correo electrónico para completar el registro.</p>
+    </div>
+  </div>
+
+  <!--JAVASCRIPT PARA MODAL-->
+  <script>
+    var modal = document.getElementById("Modal");
+    var btn = document.getElementById("registrar-btn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
