@@ -6,14 +6,14 @@
 }
 
 body{
-    background-color:#9BB0C1;
+    background-color:#ffddd7;
     margin: 0;
 }
 /*INICIO ENCABEZADO*/
 header{
     position: flex;
     top: 0; left: 0; right: 0;
-    background: #51829B;
+    background: #fa7a64;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,35 +24,35 @@ header{
 }
 
 header .logo {
-    color: #EADFB4;
+    color: #fdfdf9;
     font-size: 3rem;
     font-weight: bold;
     text-decoration: none;
 }
 
 header .logo:hover{
-    color: #F6995C;
+    color: #a73632;
 }
 
 header .navbar a{
     font-size: 18px;
     padding: 0 2rem;
-    color: #EADFB4;
+    color: #fdfdf9;
     text-decoration: none;
 }
 
 header .navbar a:hover{
-    color: #F6995C;
+    color: #a73632;
 }
 
 header .iconos a{
     font-size: 24px;
-    color: #333;
+    color: #fdfdf9;
     margin-left: 20px;
 }
 
 header .iconos a:hover{
-    color: #F6995C;
+    color: #a73632;
 }
 /*FIN ENCABEZADO*/
 
@@ -64,7 +64,7 @@ header .iconos a:hover{
 
 .b-navegacion ul{
     list-style: none;
-    background-color: #335c70;
+    background-color: #a73632;
     text-align: center;
     height: 54px;
     padding: 0; 
@@ -80,29 +80,29 @@ header .iconos a:hover{
     display: block;
     padding: 12px 18px;
     font-size: 20px;
-    color: #EADFB4;
+    color: #fdfdf9;
     text-decoration: none;
     text-align: left;
 }
 
 .b-navegacion ul li ul.dropdown li{
     display: block;
-    background: #335c70;
+    background: #a73632;
     margin: 0px;
     padding: 0;
 }
 
 .b-navegacion ul li ul.dropdown{
     width: auto;
-    background: #F6995C;
+    background: #a73632;
     position: absolute;
     z-index: 999;
     display: none;
 }
 
 .b-navegacion ul li a:hover{
-    background: #F6995C;
-    color: #EADFB4;
+    background: #fdfdf9;
+    color: #a73632;
 }
 
 .b-navegacion ul li:hover ul.dropdown{
@@ -110,8 +110,8 @@ header .iconos a:hover{
 }
 
 .b-navegacion ul li ul.dropdown li a:hover{
-    background-color: #F6995C;
-    color: #EADFB4;
+    background-color: #fdfdf9;
+    color: #a73632;
 }
 
 /*BARRA BUSQUEDA*/
@@ -139,8 +139,8 @@ header .iconos a:hover{
 }
 
 .caja a .fas{
-    color: #F6995C;
-    background-color: #51829B;
+    color: #fa7a64;
+    background-color: #a73632;
     font-size: 18px;
     padding: 8px;
     border-radius: 15px;
@@ -163,7 +163,7 @@ header .iconos a:hover{
 /*PRODUCTOS POPULARES*/
 /*TITULO*/
 .titulo {
-    background-color: #51829B; 
+    background-color: #fa7a64; 
     padding: 20px; 
     border-radius:50px;
     width: 100%; 
@@ -239,7 +239,7 @@ header .iconos a:hover{
 }
 
 .producto button {
-    background-color: #F6995C;
+    background-color: #fa7a64;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -249,20 +249,20 @@ header .iconos a:hover{
 }
 
 .producto button:hover {
-    background-color: #0056b3;
+    background-color: #a73632;
 }
 /*FIN PRODUCTOS POPULARES CARDS*/
 
 /*INICIO PIE DE PAGINA*/
 .pie .pie-pagina {
-    color: #EADFB4;
+    color: #fdfdf9;
     text-align: center;
     bottom: 0;
     width: 100%;
 }
 
 .pie-pagina .fondo {
-    background-color: #51829B;
+    background-color: #fa7a64;
     padding: 30px 0;
 }
 
@@ -276,6 +276,11 @@ header .iconos a:hover{
     width: 200px;
 }
 
+.pie-pagina h4{
+    color: #fdfdf9;
+    font-weight: bold;
+}
+
 .pie-pagina ul {
     list-style-type: none;
     padding: 0;
@@ -286,12 +291,12 @@ header .iconos a:hover{
 }
 
 .pie-pagina ul li a {
-    color: #EADFB4;
+    color: #fdfdf9;
     text-decoration: none;
 }
 
 .pie-pagina ul li a:hover {
-    color: #F6995C;
+    color: #a73632;
 }
 
 .pie-pagina .contacto p {
@@ -299,7 +304,11 @@ header .iconos a:hover{
 }
 
 .pie-pagina .contacto p a {
-    color: #EADFB4;
+    color: #fdfdf9;
+}
+
+.pie-pagina .contacto p a:hover{
+    color:#a73632;
 }
 
 .pie-pagina .clinica-veterinaria p {
@@ -563,7 +572,6 @@ header .iconos a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #9BB0C1; 
 }
 
 .contenido-centrado p {
@@ -621,3 +629,11 @@ header .iconos a:hover{
     text-decoration: none;
 }
 /*Fin del modal*/
+
+/*
+COLORS
+#fa7a64
+#fdfdf9
+#aa5c4d
+#a73632
+*/
