@@ -495,11 +495,9 @@ header .iconos a:hover{
     padding: 20px;
 }
 
-
 .mapa {
     margin-bottom: 20px;
 }
-
 
 .formulario {
     background-color: #f9f9f9;
@@ -545,7 +543,7 @@ header .iconos a:hover{
 
 .boton-enviar {
     padding: 10px 20px;
-    background-color: #F6995C;
+    background-color: #fa7a64;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -557,7 +555,7 @@ header .iconos a:hover{
 }
 
 .boton-enviar:hover {
-    background-color: #d36b26;
+    background-color: #a73632;
 }
 
 /*Fin contacto*/
