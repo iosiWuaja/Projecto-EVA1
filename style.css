@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Poetsen One", sans-serif;
     text-decoration: none;
 }
 
@@ -163,9 +163,7 @@ header .iconos a:hover{
 /*PRODUCTOS POPULARES*/
 /*TITULO*/
 .titulo {
-    background-color: #fa7a64; 
     padding: 20px; 
-    border-radius:50px;
     width: 100%; 
     margin: 30px auto; 
     text-align: center; 
@@ -194,9 +192,9 @@ header .iconos a:hover{
     padding: 20px;
     position: relative; 
     background-color: #fff;
-      width: 300px;
+    width: 300px;
     height: auto; 
-     border-radius: 10px;
+    border-radius: 10px;
     overflow: hidden; 
     margin: 10px; 
     display: inline-block;
@@ -231,7 +229,8 @@ header .iconos a:hover{
 }
 
 .precio-descuento {
-    color: #007bff; 
+    color: #a73632; 
+    font-weight: bold;
 }
 .precio-anterior del {
     text-decoration: line-through;
@@ -322,10 +321,8 @@ header .iconos a:hover{
 .title{
     text-align: center;
     font-size: 50px;
-    color: #EADFB4;
+    color: #a73632;
     padding: 1rem 0;
-    background: #51829B;
-    border-radius: 80px;
 }
 
 .botones button{
@@ -334,7 +331,7 @@ header .iconos a:hover{
     width: 300px;
     align-items: center;
     justify-content: left;
-    background-color: #EADFB4;
+    background-color: #fa7a64;
     border-radius: 50px;
     padding: 0 20px;
     margin-left: 10px; 
@@ -349,11 +346,11 @@ header .iconos a:hover{
 .botones p{
     font-size: 18px;
     text-align: left;
-    color: #51829B;
+    color: #fdfdf9;
 }
 
 .botones button:hover{
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .descts .fila-row .botones{
