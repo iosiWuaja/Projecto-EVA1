@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Patitas</title>
+    <!--<script type="text/javascript" src="script.js"></script>-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,7 +35,7 @@
     <input class="recuadro" type="text" name="apellidos" id="apellidos" placeholder=" Apellido">
     <input class="recuadro" type="email" name="correo" id="correo" placeholder="Correo">
     <input class="recuadro" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña">
-    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+    <input type="checkbox" name="confirmar" id="confirm"><p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
     <input class="boton" type="submit" value="Registrar" id="registrar-btn">
     <p><a href="usuario.html">¿Ya tengo Cuenta?</a></p>
   </section>
@@ -46,23 +47,8 @@
     </div>
   </div>
 
-  <!--JAVASCRIPT PARA MODAL-->
-  <script>
-    var modal = document.getElementById("Modal");
-    var btn = document.getElementById("registrar-btn");
-    var span = document.getElementsByClassName("close")[0];
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
+  <!--Cargar JAVASCRIPT-->
+  <script src="script.js"></script>
 
 </body>
 </html>
