@@ -1,6 +1,7 @@
 var modal = document.getElementById("Modal");
 var btn = document.getElementById("registrar-btn");
 var span = document.getElementsByClassName("close")[0];
+let conteo = 0;
 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -13,3 +14,19 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+const añadir = () => {
+    conteo++;
+}
+
+const actValor = () => {
+    document.getElementById('conteo').innerText = conteo;
+};
+
+const añadirBtns = document.getElementsByClassName('añadir');
+Array.from(añadirBtns).forEach(btn => {
+    btn.addEventListener('click', (event) =>{
+        añadir();
+        actValor();
+    });
+});

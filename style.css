@@ -54,6 +54,22 @@ header .iconos a{
 header .iconos a:hover{
     color: #a73632;
 }
+header .icono-carro{
+    position: relative;
+}
+header .iconos span{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #a73632;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top:4%;
+    right: 7%;
+}
 /*FIN ENCABEZADO*/
 
 /*INICIO BARRA NAVEGACION*/
