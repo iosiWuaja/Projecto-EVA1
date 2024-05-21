@@ -155,9 +155,9 @@ function mostraAlerta(texto){
 
 $(document).ready(function() {
   $('#registro-form').submit(function(e) {
-      e.preventDefault(); // Evitar el envío del formulario por defecto
+      e.preventDefault(); 
 
-      // Obtener los valores de los campos de entrada
+     
       var nombres = $('#nombres').val();
       var apellidos = $('#apellidos').val();
       var correo = $('#correo').val();
@@ -190,11 +190,11 @@ $(document).ready(function() {
           return;
       }
 
-      // Si todos los campos están completos, mostrar el modal de éxito
+      
       $('#Modal').show();
   });
 
-  // Cerrar el modal cuando se haga clic en la "x"
+  
   $('.close').click(function() {
       $('#Modal').hide();
   });
