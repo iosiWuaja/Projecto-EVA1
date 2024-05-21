@@ -24,6 +24,7 @@ header{
 }
 
 header .logoo {
+    display: flex;
     color: #fdfdf9;
     font-size: 3rem;
     font-weight: bold;
@@ -89,7 +90,7 @@ header .iconos span{
 
 .b-navegacion ul li{
     display: inline-block;
-    position: relative;
+    position: flex;
 }
 
 .b-navegacion ul li a{
@@ -398,7 +399,7 @@ header .iconos span{
 
 /*VISTA INICIAR SESION*/
 .fondo-pagina {
-    background: url('img/perro_gato_fondo.webp') no-repeat center center fixed;
+    background: url('img/fondo_inicio\ sesion.webp') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -428,8 +429,8 @@ header .iconos span{
 
 .form-login .recuadro {
     
-    width: 90%; 
-    height: 20px; 
+    width: 98%; 
+    height: 40px; 
     margin-bottom: 25px;
     padding: 10px; 
     font-size: 0.9375rem; 
@@ -491,13 +492,48 @@ header .iconos span{
     background-color:transparent;
     text-decoration: underline;
 }
+/* Estilo para el modal */
+.modaal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modaal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #111111;
+    width: 19%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 /*CIERRE INICIO SESION*/
 
 /*VISTA CREAR CUENTA*/
 
 .fondo-paginaa {
-    background: url('img/perro-con-una-barra-de-pan-en-la-boca_fc3d488a_900x900.jpeg') no-repeat center center fixed;
+    background: url('img/fondo_\ registro.jpeg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -508,9 +544,9 @@ header .iconos span{
 }
 .form-registro {
     
-    width: 380px; 
+    width: 410px; 
     background-color: rgba(240, 184, 218, 0.5); 
-    padding: 20px;
+    padding: 40px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: auto;
@@ -525,8 +561,8 @@ header .iconos span{
 }
 
 .form-registro .recuadro {
-    width: 90%; 
-    height: 20px; 
+    width: 98%; 
+    height: 45px; 
     margin-bottom: 25px;
     padding: 10px; 
     font-size: 0.9375rem; 
@@ -565,21 +601,37 @@ header .iconos span{
 }
 
 /*CIERRE CREAR CUENTA*/
+/*contactanos*/
 
-/*CONTACTO HTML*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+a{
+    text-decoration: none;
+}
+
+.alert{
+    display: flex;
+    padding: 12px 20px;
+    background: #f8d7da;
+    color: #721c24;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+}
 .fondo-paginna {
-    background: url('img/195141.webp') no-repeat center center fixed;
+    background: url('img/fondo_formulario.webp') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-
 }
-
-.forma {
+.contenedor{
+    display: flex;
     max-width: 600px; 
     width: 90%;
     background-color: rgba(240, 184, 218, 0.5); 
@@ -591,77 +643,81 @@ header .iconos span{
     color: rgb(14, 13, 13); 
 }
 
-
-
-.formulario {
-    width: 90%; 
-    height: 20px; 
-    margin-bottom: 25px;
-    padding: 10px; 
-    font-size: 0.9375rem; 
-    font-weight: bold;
-    color: rgb(15, 15, 15);
-}
-
-.formulario h1 {
-    margin-bottom: 20px;
+.contenedor h1{
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
     text-align: center;
+    margin-bottom: 25px;
+    color: #020202;
 }
 
-.form-grupo {
-    margin-bottom: 20px;
+.contenido{
+   
+        text-align: center;
+    
 }
 
-.form-grupo label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-grupo input[type="text"],
-.form-grupo input[type="email"],
-.form-grupo textarea {
+.formulario input[type='text'],
+.formulario textarea{
     width: 100%;
-    padding: 10px;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #999;
+    color: #0f0f0f;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    outline: 0;
+}
+
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+}
+
+
+
+.formulario button{
+    padding: 12px 30px;
     border: transparent;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.form-grupo textarea {
-    height: 150px;
-
-}
-
-.form-grupo input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    color: transparent;
-    border-radius: 5px;
+    background: #640511;
+    color: #fff;
     cursor: pointer;
+    float: right;
+    
 }
 
-.boton-enviar {
-    width: 100%;
-    padding: 10px;
-    background: #F6995C;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+@media (max-width: 520px){
+   .contenedor{
+       padding: 40px 20px;
+   }
+
+   .contenido .info,
+   .contenido .formulario{
+       width: 100%;
+       padding: 0px;
+   }
+
+   .contenido .info{
+       margin-bottom: 30px;
+   }
 }
 
-.boton-enviar:hover {
-    background-color: #a73632;
-}
-
-@media screen and (max-width: 768px) {
-    .forma {
-        width: 90%; 
+@media (max-width: 800px){
+  
+    .contenido .info,
+    .contenido .formulario{
+        width: 100%;
+        padding: 0px;
     }
-}
-
-/*Fin contacto*/
+ 
+    .contenido .info{
+        margin-bottom: 30px;
+    }
+ }
 
 /*CARRITO*/
 .contenido-centrado {
@@ -693,7 +749,7 @@ header .iconos span{
 }
 /*Fin carrito*/
 
-/*Modal*/
+/*Modal REGISTRO*/
 .modal {
     display: none;
     position: fixed;
@@ -735,3 +791,13 @@ COLORS
 #aa5c4d
 #a73632
 */
+/*enviado*/
+.fondo-paginnnaa {
+    background: url('img/gracias.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}

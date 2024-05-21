@@ -9,26 +9,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Patitas</title>
-    <!--<script type="text/javascript" src="script.js"></script>-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="fondo-paginaa">
   
    <a href="index.html" class="logo">
-        <img src="img/Captura_de_pantalla_2024-05-20_181156-removebg-preview.png" alt="Logo 2">
+        <img src="img/logo esquina inicio.png" alt="Logo 2">
         <span>Inicio</span>
     </a>
     
 
   <section class="form-registro">
     <h4>Registrarse</h4>
-    <input class="recuadro" type="text" name="nombres" id="nombres" placeholder="Nombres">
-    <input class="recuadro" type="text" name="apellidos" id="apellidos" placeholder=" Apellido">
-    <input class="recuadro" type="email" name="correo" id="correo" placeholder="Correo">
-    <input class="recuadro" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña">
-    <input type="checkbox" name="confirmar" id="confirm"><p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-    <input class="boton" type="submit" value="Registrar" id="registrar-btn">
-    <p><a href="usuario.html">¿Ya tengo Cuenta?</a></p>
+    <form id="registro-form">
+        <input class="recuadro" type="text" name="nombres" id="nombres" placeholder="Nombres">
+        <input class="recuadro" type="text" name="apellidos" id="apellidos" placeholder="Apellido">
+        <input class="recuadro" type="email" name="correo" id="correo" placeholder="Correo">
+        <input class="recuadro" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña">
+        <input type="checkbox" name="confirmar" id="confirm"><p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+        <input class="boton" type="submit" value="Registrar" id="registrar-btn">
+        <p><a href="usuario.html">¿Ya tengo Cuenta?</a></p>
+    </form>
   </section>
 
   <div id="Modal" class="modal">
@@ -38,8 +39,7 @@
     </div>
   </div>
 
-  <!--Cargar JAVASCRIPT-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
-
 </body>
 </html>
