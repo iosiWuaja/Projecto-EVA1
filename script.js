@@ -31,33 +31,30 @@ Array.from(añadirBtns).forEach(btn => {
     });
 });
 
-/*formurlario contacto */
-
-
-
+/*FORMULARIO CONTACTO*/
 
 function validarFormulario(){
  
   $('.alert').remove();
 
 
-  // declarion de variables
+  
   var nombre=$('#nombre').val(),
       correo=$('#correo').val(),
       asunto=$('#asunto').val(),
       mensaje=$('#mensaje').val();
 
-  // validamos el campo nombre
+  
   if(nombre=="" || nombre==null){
 
       cambiarColor("nombre");
-      // mostramos le mensaje de alerta
-      mostraAlerta("Ingresa nombre");
+      
+      mostraAlerta("Ingrese un nombre");
       return false;
   }else{
       var expresion= /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/;
       if(!expresion.test(nombre)){
-          // mostrara el mesaje que debe ingresar un nombre válido
+         
           cambiarColor("nombre");
           mostraAlerta("No se permiten carateres especiales o numeros");
           return false;
@@ -68,13 +65,13 @@ function validarFormulario(){
   if(correo=="" || correo==null){
 
       cambiarColor("correo");
-      // mostramos le mensaje de alerta
-      mostraAlerta("Ingresa correo electronico");
+      
+      mostraAlerta("Ingrese un correo electronico");
       return false;
   }else{
       var expresion= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
       if(!expresion.test(correo)){
-          // mostrara el mesaje que debe ingresar un nombre válido
+          
           cambiarColor("correo");
           mostraAlerta("Por favor ingrese un correo válido");
           return false;
@@ -85,13 +82,13 @@ function validarFormulario(){
   if(asunto=="" || asunto==null){
 
       cambiarColor("asunto");
-      // mostramos le mensaje de alerta
+      
       mostraAlerta("Asunto vacío");
       return false;
   }else{
       var expresion= /^[,\\.\\a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]*$/;
       if(!expresion.test(asunto)){
-          // mostrara el mesaje que debe ingresar un nombre válido
+          
           cambiarColor("asunto");
           mostraAlerta("No se permiten caracteres especiales");
           return false;
@@ -108,7 +105,7 @@ function validarFormulario(){
   }else{
       var expresion= /^[,\\.\\a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]*$/;
       if(!expresion.test(mensaje)){
-          // mostrara el mesaje que debe ingresar un nombre válido
+         
           cambiarColor("mensaje");
           mostraAlerta("No se permiten caracteres especiales");
           return false;
