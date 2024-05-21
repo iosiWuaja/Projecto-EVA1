@@ -23,14 +23,14 @@ header{
     height: 40px;
 }
 
-header .logo {
+header .logoo {
     color: #fdfdf9;
     font-size: 3rem;
     font-weight: bold;
     text-decoration: none;
 }
 
-header .logo:hover{
+header .logoo:hover{
     color: #a73632;
 }
 
@@ -191,6 +191,7 @@ header .iconos span{
 /*TITULO*/
 
 /* INICIO CARDS*/
+
 .contenedor {
     display: flex;
     flex-direction: column;
@@ -221,6 +222,7 @@ header .iconos span{
     max-width: 100%;
     position: relative; 
 }
+
 .contenedor-imagen {
     position: relative;
     display: inline-block;
@@ -249,6 +251,7 @@ header .iconos span{
     color: #a73632; 
     font-weight: bold;
 }
+
 .precio-anterior del {
     text-decoration: line-through;
     color: #999; 
@@ -265,8 +268,16 @@ header .iconos span{
 }
 
 .producto button:hover {
-    background-color: #a73632;
+    background-color: #a73632; 
 }
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .producto {
+        width: calc(50% - 10px); /* 2 productos por fila en pantallas pequeñas */
+    }
+}
+
 /*FIN PRODUCTOS POPULARES CARDS*/
 
 /*INICIO PIE DE PAGINA*/
@@ -288,7 +299,7 @@ header .iconos span{
     flex-wrap: wrap;
 }
 
-.pie-pagina .logo img {
+.pie-pagina .logooo img {
     width: 200px;
 }
 
@@ -386,54 +397,89 @@ header .iconos span{
 /*FIN PROMOCIONES HTML*
 
 /*VISTA INICIAR SESION*/
+.fondo-pagina {
+    background: url('img/perro_gato_fondo.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+
 .form-login {
-    width: 400px;
-    height: 340px;
-    background: #24303c;
+    width: 350px; 
+    background-color: rgba(240, 184, 218, 0.5); 
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: auto;
     margin-top: 100px;
-    box-shadow: 7px 13px 37px #000;
-    padding: 20px 30px;
-    color: white;
+    color: rgb(14, 13, 13); 
 }
 
 .form-login h5 {
-    margin: 0;
     text-align: center;
-    height: 40px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid;
-    font-size: 20px;
+    margin-bottom: 20px; 
+    font-size: 15px;
 }
 
 .form-login .recuadro {
-    width: 100%;
-    border: 1px solid #017bab;
-    margin-bottom: 15px;
-    padding: 11px 10px;
-    background: #252323;
-    font-size: 14px;
+    
+    width: 90%; 
+    height: 20px; 
+    margin-bottom: 25px;
+    padding: 10px; 
+    font-size: 0.9375rem; 
     font-weight: bold;
-    color: white;
+    color: rgb(15, 15, 15);
+  
 }
+.logo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.logo img {
+    width: 80px; 
+    height: auto; 
+}
+
+.logo span {
+    font-size: 20px; 
+    margin-left: 0;
+    
+}
+
 
 .form-login .boton {
     width: 100%;
-    height: 40px;
+    padding: 10px;
     background: #F6995C;
-    border: none;
     color: white;
-    margin-bottom: 16px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    
 }
+
 .form-login .boton:hover {
-    opacity: 0.7;
+    background: #F6995C;
+    opacity: 0.9;
 }
 
 .form-login p {
-    height: 40px;
     text-align: center;
-    border-bottom: 2px solid;
+    margin-bottom: 0;
 }
 
 .form-login a {
@@ -442,40 +488,54 @@ header .iconos span{
 }
 
 .form-login a:hover {
+    background-color:transparent;
     text-decoration: underline;
 }
+
 /*CIERRE INICIO SESION*/
 
 /*VISTA CREAR CUENTA*/
+
+.fondo-paginaa {
+    background: url('img/perro-con-una-barra-de-pan-en-la-boca_fc3d488a_900x900.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
 .form-registro {
-    width: 400px;
-    background: #24303c;
+    
+    width: 380px; 
+    background-color: rgba(240, 184, 218, 0.5); 
     padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: auto;
-    margin-top: 50px;
-    border-radius: 10px;
-    color: white;
-    box-shadow: 7px 13px 37px #000;
+    margin-top: 100px;
+    color: rgb(14, 13, 13); 
 }
 
 .form-registro h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px; 
+    font-size: 15px;
 }
 
 .form-registro .recuadro {
-    width: 95%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-size: 18px;
-    color: white;
+    width: 90%; 
+    height: 20px; 
+    margin-bottom: 25px;
+    padding: 10px; 
+    font-size: 0.9375rem; 
+    font-weight: bold;
+    color: rgb(15, 15, 15);
 }
 
 .form-registro p {
-    height: 40px;
+    height: 20px;
     text-align: center;
     font-size: 15px;
     line-height: 30px;
@@ -503,23 +563,44 @@ header .iconos span{
 .form-registro .boton:hover{
     opacity: 0.7;
 }
+
 /*CIERRE CREAR CUENTA*/
 
 /*CONTACTO HTML*/
-.forma {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+
+.fondo-paginna {
+    background: url('img/195141.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
 }
 
-.mapa {
-    margin-bottom: 20px;
+.forma {
+    max-width: 600px; 
+    width: 90%;
+    background-color: rgba(240, 184, 218, 0.5); 
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 100px;
+    color: rgb(14, 13, 13); 
 }
+
+
 
 .formulario {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
+    width: 90%; 
+    height: 20px; 
+    margin-bottom: 25px;
+    padding: 10px; 
+    font-size: 0.9375rem; 
+    font-weight: bold;
+    color: rgb(15, 15, 15);
 }
 
 .formulario h1 {
@@ -541,38 +622,43 @@ header .iconos span{
 .form-grupo textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: transparent;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .form-grupo textarea {
     height: 150px;
+
 }
 
 .form-grupo input[type="submit"] {
     width: 100%;
     padding: 10px;
     border: none;
-    color: #fff;
+    color: transparent;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .boton-enviar {
-    padding: 10px 20px;
-    background-color: #fa7a64;
-    color: #fff;
+    width: 100%;
+    padding: 10px;
+    background: #F6995C;
+    color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s; 
-    width: 100px; 
-    margin: 0 auto;
-    margin-left: 500px;
 }
 
 .boton-enviar:hover {
     background-color: #a73632;
+}
+
+@media screen and (max-width: 768px) {
+    .forma {
+        width: 90%; 
+    }
 }
 
 /*Fin contacto*/
