@@ -95,7 +95,7 @@ function validarFormulario(){
       }
   }
 
-   // validamos el mensaje
+   // validar el mensaje
    if(mensaje=="" || mensaje==null){
 
       cambiarColor("mensaje");
@@ -149,7 +149,6 @@ function mostraAlerta(texto){
 
 
 /*Formulario REGISTRO */
-
 $(document).ready(function() {
   $('#registro-form').submit(function(e) {
       e.preventDefault(); 
